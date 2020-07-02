@@ -88,7 +88,7 @@ def download_video(video_id):
     video_id (str): Video id
     '''
 
-    video_url = 'https://api2.musical.ly/aweme/v1/playwm/?video_id={}'.format(video_id)
+    video_url = 'https://api2-16-h2.musical.ly/aweme/v1/play/?video_id={}&vr_type=0&is_play_url=1&source=PackSourceEnum_PUBLISH&media_type=4'.format(video_id)
 
     r = requests.get(video_url, headers=headers, allow_redirects=True)
 
